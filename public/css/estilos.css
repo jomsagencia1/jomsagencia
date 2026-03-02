@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'Seraya';
+  src: url('../fonts/Seraya DEMO.otf') format('opentype');
+}
+ 
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+.body{
+  font-family: 'PlayfairDisplay', serif;
+}
+
+h1, p, h4{
+   font-family: 'PlayfairDisplay', serif;
+}
+
+.custom-navbar {
+  background-color: #D8BEFF ;
+  padding: 10px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.custom-navbar .logo {
+  width: 120px;
+  border-radius: 8px;
+}
+
+.navbar-nav .nav-link {
+  color: #742DE1 !important;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: 0.3s;
+  font-family: 'PlayfairDisplay', serif;
+  letter-spacing: 1.5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #D8BEFF !important;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.nav-item{
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: #742DE1;
+    margin: 2px;
+    padding: 2px;
+}
+.nav-item:hover{
+    background-color: #742DE1;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 50px;
+}
+
+.home {
+  height: 100vh;
+  position: relative;
+}
+
+.home h1 {
+  color: #D8BEFF;
+  font-weight: 600;
+  font-size: 10px;
+  font-family: 'PlayfairDisplay', serif;
+}
+
+
+.joms{
+    background-color: #D8BEFF;
+    height: 100vh;
+     position: relative;
+}
+
+#joms {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/imgs/home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Overlay suave para destacar o texto */
+#joms::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+ background: rgba(120, 30, 255, 0.16); /* mais roxo */
+}
+
+
+#joms > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contactos-section h1,
+.contactos-section .contact-box {
+  position: relative;
+  z-index: 2;
+}
+
+.contactos-section {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.contact-box {
+  background: rgba(184, 130, 254, 0.9); 
+  border-radius: 30px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+}
+
+.contact-input {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 6px;
+}
+
+.video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.contactos-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(116, 45, 225, 0.65); /* roxo translúcido */
+  z-index: 1;
+}
+
+
+.contact-btn {
+  background-color: #742DE1;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  
+}
+
+.contact-btn:hover {
+  background-color: #5a20b5;
+   transform: translateY(-3px);
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #742DE1;
+}
+
+
+.roda {
+  width: 200px;
+  height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #D8BEFF;
+     display: flex;            /* centraliza horizontal e vertical */
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;   
+}
+
+.roda img{
+  height: auto;
+}
+
+
+.flip-card {
+    background: transparent;
+    width: 100%;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.flip-back {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: 'PlayfairDisplay', serif;
+    color: white;
+}
+
+.contact-btn {
+    background-color: #742DE1;  
+    color: white;
+    padding: 20px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all .25s ease;
+    text-decoration: none; /* tira sublinhado */
+}
+
+.contact-btn:hover {
+    box-shadow: 0 6px 18px rgba(142, 82, 227, 0.45);
+    transform: translateY(-2px);
+}
+
+
+.footer{
+  background-color: #D8BEFF;
+}
+
+
+.filter-btn {
+  border-radius: 30px;
+  padding: 10px 22px;
+}
+
+.filter-btn.active {
+  background-color: #742DE1;
+  border-color: #742DE1;
+  color: white;
+}
+
+.portefolio-item {
+  transition: all 0.4s ease;
+}
+
+
+.logos_design{
+  width: 100px;
+  
+}
+
+button.btn.filter-btn{
+background-color: #742DE1;
+color: #e6e6e6;
+font-family: 'PlayfairDisplay', serif;
+letter-spacing: 1.5px;
+border-radius: 30px;
+padding: 15px;
+}
+
+
+.portefolio-marquee {
+  background-color: #742DE1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-track span {
+  font-family: 'PlayfairDisplay', serif;
+  font-size: 70px;
+  color: #e6e6e6;
+  margin-right: 20px;
+  letter-spacing: 3px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
