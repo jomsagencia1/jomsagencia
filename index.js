@@ -10,6 +10,15 @@ const port = 3003;
 let data;
 
 
+const PORT = process.env.PORT || 3003;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
+
+
+
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(express.static('public'));
