@@ -307,7 +307,8 @@ padding: 15px;
 
 
 .videos_media{
-  width: 300px;
-  border-radius: 14%;
-  
+  width: 300px;        
+  height: 600px;      
+  object-fit: cover;
+  border-radius: 20px;
 }
