@@ -304,3 +304,10 @@ padding: 15px;
     transform: translateX(-50%);
   }
 }
+
+
+.videos_media{
+  width: 300px;
+  border-radius: 14%;
+  
+}
