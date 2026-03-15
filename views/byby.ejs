@@ -1,7 +1,7 @@
   
 <%- include ('partials/header.ejs') %>  
-  
-  <div class="d-flex flex-wrap justify-content-center gap-4 p-2 mb-3">
+ <div class="container" >
+   <div class="d-flex flex-wrap justify-content-center gap-4 p-2 mb-3">
 
       <button class="btn filter-btn active" data-filter="all">Todos</button>
       <button class="btn filter-btn" data-filter="web">Websites</button>
@@ -9,7 +9,6 @@
       <button class="btn filter-btn" data-filter="social">Redes Sociais</button>
       <button class="btn filter-btn" data-filter="media">Multimédia</button>
     </div>
-
 
     <div class="portefolio-item web mb-5">
 
@@ -64,6 +63,30 @@
     <div class="portefolio-item media mb-5">
         
     </div>
+</div> 
+ <script>
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".portefolio-item");
 
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      // botão ativo
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      items.forEach(item => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+    });
+  });
+</script> 
     
 <%- include ('partials/footer.ejs') %>  
