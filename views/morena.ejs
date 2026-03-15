@@ -1,6 +1,6 @@
 
 <%- include ('partials/header.ejs') %>  
-<div class="container p-5 text-center">
+<div class="container p-5 text-center" id="portfolio">
       <div class="d-flex flex-wrap justify-content-center gap-4 p-2 mb-3">
 
       <button class="btn filter-btn active" data-filter="all">Todos</button>
@@ -13,7 +13,7 @@
 
     <div class="portefolio-item web mb-5">
 
-       <h4 style="color:#742DE1;">Website</h4>
+       <h4 style="color:#ffffff;">Website</h4>
       <br>
       <div id="carouselMorena" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -52,20 +52,20 @@
 
     <!-- PROJETO 2 -->
     <div class="portefolio-item social mb-5">
-        <h4 style="color:#742DE1;">Morena</h4>
+        <h4 style="color:#ffffff">Morena</h4>
         <br>
        <img src="/imgs/sm_morena.png" alt="" style="border-color: 2px solid #000; border-radius: 10px; width: 300px;">
       
     </div>
 
     <div class="portefolio-item branding mb-5">
-        <h4 style="color:#742DE1;">Design E Branding</h4>
+        <h4 style="color:#ffffff;">Design E Branding</h4>
           <br>
           <img src="/imgs/logotipom.jpg" class="logos_design" style="width: 200px; border-radius: 50%;">
     </div>
 
     <div class="portefolio-item media mb-5">
-      <h4 style="color:#742DE1;">Multimédia</h4>
+      <h4 style="color:#ffffff">Multimédia</h4>
       <br>
           <video autoplay loop muted playsinline  class="videos_media">
             <source src="/videos/video1.mp4" type="video/mp4">
@@ -84,7 +84,7 @@
           </video>
     </div>
 
-    <button class="btn-voltar" onclick="history.back()">Voltar</button>
+    <button class="btn-voltar" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'});">Voltar</button>
 </div> 
 
 

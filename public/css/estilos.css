@@ -319,7 +319,21 @@ padding: 15px;
 }
 
 
-#btnTopo, .btn-voltar{
+.btn-voltar{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #7c5cff;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+#btnTopo{
   position: fixed;
   bottom: 20px;
   right: 20px;
