@@ -28,9 +28,14 @@ app.get('/', (req, res) => {
     res.render(__dirname + '/views/joms.ejs');
 })
 
-app.get('/', (req, res) => {
+app.get('/morena', (req, res) => {
 
     res.render('morena.ejs');
+})
+
+app.get('/byby', (req, res) => {
+
+    res.render('byby.ejs');
 })
 
 
