@@ -308,8 +308,40 @@ padding: 15px;
 
 
 .videos_media{
-  width: 200px;        
+  width: 300px;        
   height: 500px;      
   object-fit: cover;
   border-radius: 20px;
+}
+.btn-voltar{
+    background-color: #7c5cff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover{
+    background-color: #5a3fd6;
+}
+
+
+#btnTopo{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #7c5cff;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+#btnTopo:hover{
+  background-color: #5a3fd6;
 }

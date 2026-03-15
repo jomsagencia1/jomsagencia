@@ -1,5 +1,6 @@
 
 <%- include ('partials/header.ejs') %>  
+<button onclick="topFunction()" id="btnTopo">↑</button>
 
 <section id="joms" class="joms d-flex flex-column justify-content-center align-items-center text-center">
   
@@ -267,6 +268,23 @@
 
     });
   });
+
+
+  let mybutton = document.getElementById("btnTopo");
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
 </script>
 
 <%- include ('partials/footer.ejs') %>  
