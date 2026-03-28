@@ -61,8 +61,8 @@ h1, p, h4{
 }
 
 .frosted-navbar {
-  background: rgba(216, 190, 255, 0.35); /* transparência */
-  backdrop-filter: blur(12px); /* efeito vidro */
+  background: rgba(216, 190, 255, 0.409); /* transparência */
+  backdrop-filter: blur(8px); /* efeito vidro */
   -webkit-backdrop-filter: blur(12px); /* Safari */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
