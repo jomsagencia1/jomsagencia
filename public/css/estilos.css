@@ -60,6 +60,31 @@ h1, p, h4{
     border-radius: 50px;
 }
 
+.frosted-navbar {
+  background: rgba(216, 190, 255, 0.35); /* transparência */
+  backdrop-filter: blur(12px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* links mais visíveis em cima da imagem */
+.frosted-navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.frosted-navbar .nav-link:hover {
+  color: #D8BEFF !important;
+}
+
+/* ajustar botão mobile */
+.frosted-navbar .navbar-toggler {
+  border: none;
+}
+
+
+
+
 .home {
   height: 100vh;
   position: relative;
