@@ -129,10 +129,10 @@ h1, p, h4{
 
 
 #sobre_nos {
-   background: linear-gradient(to top, #644eb4 30%, #742DE1 30%, #5413B7 100%);
+   background: linear-gradient(to bottom, #644eb4 30%, #742DE1 30%, #5413B7 100%);
   filter: blur(7px);
     opacity: 0.65;
-  z-index: -1;
+  z-index: -2;
 }
 .contactos-section h1,
 .contactos-section .contact-box {
