@@ -16,7 +16,8 @@ app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
 
-
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -25,7 +26,7 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
 
-    res.render(__dirname + '/views/joms.ejs');
+    res.render('joms');
 })
 
 app.get('/morena', (req, res) => {
@@ -38,8 +39,4 @@ app.get('/byby', (req, res) => {
     res.render('byby.ejs');
 })
 
-
-app.listen(port, () => {
-  console.log(`Sua porta está: ${port}`)
-})
 
