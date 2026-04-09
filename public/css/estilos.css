@@ -339,23 +339,14 @@ padding: 15px;
   border-radius: 20px;
 }
 
-.btn-voltar:hover{
-    background-color: #5a3fd6;
-}
-
-
-.btn-voltar{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #7c5cff;
+.botao_morena {
+  background-color: #742DE1;
   color: white;
-  border: none;
-  padding: 15px;
+  padding: 15px 30px;
+  border-radius: 40px;
   font-size: 18px;
-  border-radius: 50%;
-  cursor: pointer;
- 
+  text-decoration: none;
+  transition: all .25s ease;
 }
 
 #btnTopo{
@@ -375,3 +366,4 @@ padding: 15px;
 #btnTopo:hover{
   background-color: #5a3fd6;
 }
+
