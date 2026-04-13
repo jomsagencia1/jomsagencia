@@ -1,118 +1,159 @@
-
 <%- include ('partials/header.ejs') %>  
+
 <div class="container p-5 text-center" id="portfolio">
-      <div class="d-flex flex-wrap justify-content-center gap-4 p-2 mb-3">
 
-      <button class="btn filter-btn active" data-filter="all">Todos</button>
-      <button class="btn filter-btn" data-filter="web">Websites</button>
-      <button class="btn filter-btn" data-filter="branding">Design E Branding</button>
-      <button class="btn filter-btn" data-filter="social">Redes Sociais</button>
-      <button class="btn filter-btn" data-filter="media">Multimédia</button>
-    </div>
+  <div class="d-flex flex-wrap justify-content-center gap-4 p-2 mb-3">
+    <button class="btn filter-btn active" data-filter="all">Todos</button>
+    <button class="btn filter-btn" data-filter="web">Websites</button>
+    <button class="btn filter-btn" data-filter="branding">Design E Branding</button>
+    <button class="btn filter-btn" data-filter="social">Redes Sociais</button>
+    <button class="btn filter-btn" data-filter="media">Multimédia</button>
+  </div>
 
+  <!-- WEBSITE -->
+  <div class="portefolio-item web mb-5">
+    <h4 style="color:#ffffff;">Website</h4>
+    <br>
+    <a href="https://morena-xgd0.onrender.com/" target="_blank" class="ver_site">Ver Site</a>
+    <br><br>
 
-    <div class="portefolio-item web mb-5">
+    <div id="carouselMorena" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-       <h4 style="color:#ffffff;">Website</h4>
-      <br>
-      <a href="https://morena-xgd0.onrender.com/" target="_blank" class="ver_site">Ver Site</a>
-      <br><br>
-      <div id="carouselMorena" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
+        <div class="carousel-item active">
+          <div class="img-hover">
             <img src="/imgs/home_MORENA.png" class="d-block w-100">
+            <div class="overlay-text">Homepage</div>
           </div>
-
-          <div class="carousel-item">
-            <img src="/imgs/sobremim_MORENA.png" class="d-block w-100">
-          </div>
-
-          <div class="carousel-item">
-            <img src="/imgs/servicos_MORENA.png" class="d-block w-100">
-          </div>
-
-          <div class="carousel-item">
-            <img src="/imgs/Galeria_MORENA.png" class="d-block w-100">
-          </div>
-
-          <div class="carousel-item">
-            <img src="/imgs/contactos_MORENA.png" class="d-block w-100">
-          </div>
-
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMorena" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMorena" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- PROJETO 2 -->
-    <div class="portefolio-item social mb-5">
-        <h4 style="color:#ffffff">Morena</h4>
-        <br>
-       <img src="/imgs/posts_morena.jpg" alt="" style="width: 700px;">
-      
-    </div>
-
-    <div class="portefolio-item branding mb-5">
-        <h4 style="color:#ffffff;">Design E Branding</h4>
-          <br>
-          <div class="row">
-            <div class="col-sm-4">
-              <img src="/imgs/logotipom.jpg" class="logos_design" style="width: 200px; border-radius: 50%;">
-            </div>
-            
-             <div class="col-sm-4">
-              <img src="/imgs/cartao_visitamorena.png"  style="width: 300px;">
-            </div>
-
-              <div class="col-sm-4">
-                <img src="/imgs/mockup_morena_oferta.png" style="width: 300px;">
-              </div>    
+        <div class="carousel-item">
+          <div class="img-hover">
+            <img src="/imgs/sobremim_MORENA.png" class="d-block w-100">
+            <div class="overlay-text">Sobre Mim</div>
           </div>
+        </div>
 
+        <div class="carousel-item">
+          <div class="img-hover">
+            <img src="/imgs/servicos_MORENA.png" class="d-block w-100">
+            <div class="overlay-text">Serviços</div>
+          </div>
+        </div>
 
+        <div class="carousel-item">
+          <div class="img-hover">
+            <img src="/imgs/Galeria_MORENA.png" class="d-block w-100">
+            <div class="overlay-text">Galeria</div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="img-hover">
+            <img src="/imgs/contactos_MORENA.png" class="d-block w-100">
+            <div class="overlay-text">Contactos</div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMorena" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMorena" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- REDES SOCIAIS -->
+  <div class="portefolio-item social mb-5">
+    <h4 style="color:#ffffff">Morena</h4>
+    <br>
+
+    <div class="img-hover">
+      <img src="/imgs/posts_morena.jpg" style="width: 900px;">
+      <div class="overlay-text">Gestão de Redes Sociais</div>
+    </div>
+  </div>
+
+  <!-- BRANDING -->
+  <div class="portefolio-item branding mb-5">
+    <h4 style="color:#ffffff;">Design E Branding</h4>
+    <br>
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="img-hover">
+          <img src="/imgs/logotipom.jpg" class="logos_design" style="border-radius: 50%;">
+          <div class="overlay-text">Logótipo</div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="img-hover">
+          <img src="/imgs/cartao_visitamorena.png" style="width: 300px;">
+          <div class="overlay-text">Cartão de Visita</div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="img-hover">
+          <img src="/imgs/mockup_morena_oferta.png" style="width: 300px;">
+          <div class="overlay-text">Ofertas Especiais</div>
+        </div>
+      </div>
 
     </div>
+  </div>
 
-    <div class="portefolio-item media mb-5">
-      <h4 style="color:#ffffff">Multimédia</h4>
-      <br>
-          <video autoplay loop muted playsinline  class="videos_media">
-            <source src="/videos/video1.mp4" type="video/mp4">
-          </video>
+  <!-- MEDIA -->
+  <div class="portefolio-item media mb-5">
+    <h4 style="color:#ffffff">Multimédia</h4>
+    <br>
 
-          <video autoplay loop muted playsinline  class="videos_media">
-            <source src="/videos/video2.mp4" type="video/mp4">
-          </video>
-
-           <video autoplay loop muted playsinline  class="videos_media">
-            <source src="/videos/video3.mp4" type="video/mp4">
-          </video>
-
-           <video autoplay loop muted playsinline  class="videos_media">
-            <source src="/videos/video4.mp4" type="video/mp4">
-          </video>
+    <div class="img-hover">
+      <video autoplay loop muted playsinline class="videos_media">
+        <source src="/videos/video1.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-text">Vídeo Promocional</div>
     </div>
+
+    <div class="img-hover">
+      <video autoplay loop muted playsinline class="videos_media">
+        <source src="/videos/video2.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-text">Conteúdo Social</div>
+    </div>
+
+    <div class="img-hover">
+      <video autoplay loop muted playsinline class="videos_media">
+        <source src="/videos/video3.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-text">Reel Criativo</div>
+    </div>
+
+    <div class="img-hover">
+      <video autoplay loop muted playsinline class="videos_media">
+        <source src="/videos/video4.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-text">Edição Vídeo</div>
+    </div>
+
+  </div>
 
 </div> 
 
 
-
- <script>
+<script>
   const buttons = document.querySelectorAll(".filter-btn");
   const items = document.querySelectorAll(".portefolio-item");
 
   buttons.forEach(button => {
     button.addEventListener("click", () => {
 
-      // botão ativo
       buttons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
 
@@ -128,8 +169,6 @@
 
     });
   });
-
-  
 </script> 
 
-<%- include ('partials/footer.ejs') %>  
+<%- include ('partials/footer.ejs') %>
