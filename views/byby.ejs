@@ -1,5 +1,6 @@
   
 <%- include ('partials/header.ejs') %>  
+
  <div class="container p-5 text-center" id="portfolio">
    <div class="d-flex flex-wrap justify-content-center gap-4 p-2 mb-3">
 
@@ -57,7 +58,7 @@
     <div class="portefolio-item social mb-5">
         <h4 style="color:#ffffff">Redes Sociais</h4>
         <br>
-      <img src="/imgs/posts_byby.jpg" alt="" style="border-radius: 10px; height: 300px;">
+      <img src="/imgs/posts_byby.jpg" alt="" style="width: 500px;">
     </div>
 
     <div class="portefolio-item branding mb-5">
@@ -67,7 +68,7 @@
     <br>
     <div class="row">
       <div class="col-sm-4">
-        <img src="/imgs/logotipob.jpeg" class="logos_design" style="width: 300px; border-radius: 50%;">
+        <img src="/imgs/logotipob.jpeg" class="logos_design" style="width: 200px; border-radius: 50%;">
       </div>
 
       <div class="col-sm-4">
@@ -77,7 +78,7 @@
 
       <div class="col-sm-4">
         <img src="/imgs/mockup_byby_oferta.png" style="width: 300px;">
-
+       </div> 
       
     </div>
 
@@ -90,7 +91,11 @@
 
    
 </div> 
- <script>
+ 
+<%- include ('partials/footer.ejs') %>  
+
+
+<script>
   const buttons = document.querySelectorAll(".filter-btn");
   const items = document.querySelectorAll(".portefolio-item");
 
@@ -115,4 +120,3 @@
   });
 </script> 
     
-<%- include ('partials/footer.ejs') %>  
